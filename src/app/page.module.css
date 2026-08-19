@@ -1,10 +1,43 @@
-.hero {
+﻿.hero {
   min-height: calc(100vh - 8rem);
   display: flex;
   align-items: center;
   padding: 40px 0 80px;
   position: relative;
   overflow: hidden;
+}
+
+/* Responsive Buttons Fixes */
+.heroButtonGroup {
+  display: flex;
+  gap: 16px;
+}
+.heroBtnPrimary {
+  padding: 12px 32px;
+}
+.heroBtnSecondary {
+  padding: 12px 24px;
+  background: transparent;
+  border-color: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 500px) {
+  .heroButtonGroup,
+  .ctaFinalButtons {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100%;
+  }
+  .heroBtnPrimary,
+  .heroBtnSecondary,
+  .ctaFinalBtnPrimary,
+  .ctaFinalBtnSecondary {
+    padding: 12px 20px !important;
+    font-size: 0.95rem !important;
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center;
+  }
 }
 
 .hero::before {
@@ -984,7 +1017,7 @@
 }
 
 .featureList li::before {
-  content: '✓';
+  content: 'âœ“';
   position: absolute;
   left: 0;
   color: var(--accent-color);
