@@ -205,10 +205,6 @@
   .finalContactCard {
     padding: 40px 20px;
   }
-
-  .heroSplit {
-    grid-template-columns: 1fr;
-  }
 }
 
 .heroSplit {
@@ -227,6 +223,18 @@
   max-width: 800px;
   margin: 80px auto;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .heroSplit {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .contactFormSection {
+    padding: 30px 20px;
+    margin: 40px auto;
+  }
 }
 
 .contactFormTitle {

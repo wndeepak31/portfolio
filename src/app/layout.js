@@ -12,7 +12,7 @@ import CTA from "../components/CTA";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <Navbar />
         {children}
         <CTA />

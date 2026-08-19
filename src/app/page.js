@@ -102,27 +102,29 @@ export default function Home() {
       </section>
 
       {/* 2. Tech Stack Logo Strip */}
-      <div className={styles.logoStrip}>
-        <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>TRUSTED TECHNOLOGIES</span>
-        <div className={styles.logoItem}>⚛️ React.js</div>
-        <div className={styles.logoItem}>▲ Next.js</div>
-        <div className={styles.logoItem}>🐘 PostgreSQL</div>
-        <div className={styles.logoItem} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#21759b">
-            <path d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.763-7.57zM3.008 12c0 3.56 1.83 6.69 4.614 8.273L4.908 12.42c-.44-1.282-.676-2.62-.676-3.95 0-.256.012-.51.037-.76.01.127.017.258.02.392zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18.665c-1.122 0-2.19-.214-3.175-.597l3.056-8.868 2.656 7.42c-.085.034-.173.064-.263.093l-.427 1.18c-.58.188-1.196.31-1.835.37-1.186.113-2.424-.047-3.553-.456l2.97-8.625h1.365l3.527 9.87c.732-.236 1.417-.556 2.046-.948l-2.64-7.464 2.875-8.232c-.524-.132-1.063-.223-1.616-.27l-3.235 9.387c-.63 1.826-1.572 2.37-2.607 2.37-.584 0-1.12-.178-1.536-.505-.504-.396-.75-.986-.75-1.748 0-1.42.714-3.79 1.636-6.104.093-.23.18-.46.26-.69.043-.12.083-.236.12-.35-.785.12-1.537.33-2.247.616L9.46 12.787zM20.655 8.167c-.208.6-.523 1.258-.938 1.954l-3.25 5.437c-.1.168-.204.338-.31.512l3.435 9.176C21.05 22.84 22 20.033 22 17c0-3.555-1.827-6.685-4.608-8.267.067-.282.102-.576.102-.876 0-1.144-.325-2.203-.896-3.11-.137.26-.275.52-.416.78z"></path>
-          </svg>
-          WordPress
+      <div className={styles.logoStripWrapper}>
+        <div className={styles.logoStripTitle}>TRUSTED TECHNOLOGIES</div>
+        <div className={styles.logoStrip}>
+          <div className={styles.logoItem}>⚛️ React.js</div>
+          <div className={styles.logoItem}>▲ Next.js</div>
+          <div className={styles.logoItem}>🐘 PostgreSQL</div>
+          <div className={styles.logoItem} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#21759b">
+              <path d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.763-7.57zM3.008 12c0 3.56 1.83 6.69 4.614 8.273L4.908 12.42c-.44-1.282-.676-2.62-.676-3.95 0-.256.012-.51.037-.76.01.127.017.258.02.392zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18.665c-1.122 0-2.19-.214-3.175-.597l3.056-8.868 2.656 7.42c-.085.034-.173.064-.263.093l-.427 1.18c-.58.188-1.196.31-1.835.37-1.186.113-2.424-.047-3.553-.456l2.97-8.625h1.365l3.527 9.87c.732-.236 1.417-.556 2.046-.948l-2.64-7.464 2.875-8.232c-.524-.132-1.063-.223-1.616-.27l-3.235 9.387c-.63 1.826-1.572 2.37-2.607 2.37-.584 0-1.12-.178-1.536-.505-.504-.396-.75-.986-.75-1.748 0-1.42.714-3.79 1.636-6.104.093-.23.18-.46.26-.69.043-.12.083-.236.12-.35-.785.12-1.537.33-2.247.616L9.46 12.787zM20.655 8.167c-.208.6-.523 1.258-.938 1.954l-3.25 5.437c-.1.168-.204.338-.31.512l3.435 9.176C21.05 22.84 22 20.033 22 17c0-3.555-1.827-6.685-4.608-8.267.067-.282.102-.576.102-.876 0-1.144-.325-2.203-.896-3.11-.137.26-.275.52-.416.78z"></path>
+            </svg>
+            WordPress
+          </div>
+          <div className={styles.logoItem}>🛍️ Shopify</div>
+          <div className={styles.logoItem}>🎨 Figma</div>
         </div>
-        <div className={styles.logoItem}>🛍️ Shopify</div>
-        <div className={styles.logoItem}>🎨 Figma</div>
       </div>
 
       <div className="container">
-        {/* 3. Why Serious Clients Choose Me */}
+        {/* 3. Why Serious Clients Choose Us */}
         <section className="section">
           <h2 className={styles.sectionTitleLeft}>
             Why Serious Clients Choose<br />
-            <span className="text-accent">Deepak.</span>
+            <span className="text-accent">Apex Tech.</span>
           </h2>
 
           <div className={styles.bentoContainer}>
