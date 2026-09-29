@@ -11,10 +11,10 @@ export default function TermsConditions() {
         <p style={{ marginBottom: '20px' }}>Standard development projects require a 50% upfront deposit before work begins, and the remaining 50% upon successful deployment and handover. All payments are non-refundable once the coding phase has commenced.</p>
 
         <h3 style={{ color: '#fff', fontSize: '1.5rem', marginTop: '40px', marginBottom: '16px' }}>3. Intellectual Property</h3>
-        <p style={{ marginBottom: '20px' }}>Upon final payment clearance, all custom code, assets, and database architecture become the exclusive property of the client. I retain the right to showcase non-confidential elements of the final product in my portfolio.</p>
+        <p style={{ marginBottom: '20px' }}>Upon final payment clearance, all custom code, assets, and database architecture become the exclusive property of the client. We retain the right to showcase non-confidential elements of the final product in our agency portfolio.</p>
 
         <h3 style={{ color: '#fff', fontSize: '1.5rem', marginTop: '40px', marginBottom: '16px' }}>4. Liability</h3>
-        <p style={{ marginBottom: '20px' }}>While I build systems adhering to the latest security standards, I cannot be held liable for third-party server outages, software vulnerabilities discovered post-deployment, or malicious attacks against the deployed application.</p>
+        <p style={{ marginBottom: '20px' }}>While we build systems adhering to the latest security standards, ApexTech+ cannot be held liable for third-party server outages, software vulnerabilities discovered post-deployment, or malicious attacks against the deployed application.</p>
       </div>
     </div>
   );

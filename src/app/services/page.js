@@ -17,7 +17,7 @@ export default function Services() {
             </h1>
           </div>
 
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className={styles.serviceCard}>
               <div className={styles.serviceBadgeContainer}>
@@ -158,6 +158,33 @@ export default function Services() {
                 </li>
               </ul>
               <Link href="/contact" className={styles.serviceButton}>View 3D Portfolio &rarr;</Link>
+            </div>
+            {/* Card 6 */}
+            <div className={styles.serviceCard}>
+              <div className={styles.serviceBadgeContainer}>
+                <span className={styles.serviceBadge}>Commerce</span>
+              </div>
+              <h3>Custom Shopify E-commerce</h3>
+              <p>Go beyond basic themes. We develop headless Shopify storefronts, custom plugins, and seamless backend integrations tailored for luxury retail.</p>
+              <ul className={styles.serviceList}>
+                <li>
+                  <svg className={styles.serviceListIcon} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                  Headless Shopify (Next.js)
+                </li>
+                <li>
+                  <svg className={styles.serviceListIcon} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                  Custom Theme Development
+                </li>
+                <li>
+                  <svg className={styles.serviceListIcon} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                  Shopify API Integrations
+                </li>
+                <li>
+                  <svg className={styles.serviceListIcon} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+                  High-converting checkouts
+                </li>
+              </ul>
+              <Link href="/contact" className={styles.serviceButton}>Build Your Store &rarr;</Link>
             </div>
           </div>
         </div>

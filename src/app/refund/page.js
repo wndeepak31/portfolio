@@ -4,7 +4,7 @@ export default function RefundPolicy() {
       <div className="container" style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         <h1 style={{ fontSize: '3rem', fontWeight: '800', color: '#fff', marginBottom: '40px' }}>Refund Policy</h1>
         
-        <p style={{ marginBottom: '20px', fontSize: '1.1rem' }}>As an independent web development practice providing highly customized digital services, refunds are subject to the following structural conditions:</p>
+        <p style={{ marginBottom: '20px', fontSize: '1.1rem' }}>As an elite web development agency providing highly customized digital services, refunds are subject to the following structural conditions:</p>
         
         <h3 style={{ color: '#fff', fontSize: '1.5rem', marginTop: '40px', marginBottom: '16px' }}>Design Phase</h3>
         <p style={{ marginBottom: '20px' }}>If you are unsatisfied during the initial UI/UX wireframing and design phase, you may request a cancellation. A partial refund of the initial deposit (minus the hourly cost of the design work already completed) will be issued.</p>

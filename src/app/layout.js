@@ -1,13 +1,14 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Apex Tech - Portfolio",
+  metadataBase: new URL('https://www.apextechplus.com'),
+  title: "ApexTech+ - Portfolio",
   description: "Full-Stack Web Developer Portfolio",
 };
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import CTA from "../components/CTA";
+import ConditionalCTA from "../components/ConditionalCTA";
 
 export default function RootLayout({ children }) {
   return (
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning>
         <Navbar />
         {children}
-        <CTA />
+        <ConditionalCTA />
         <Footer />
       </body>
     </html>

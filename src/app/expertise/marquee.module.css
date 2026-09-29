@@ -1,0 +1,78 @@
+.marqueeContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 32px;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeContent {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+  gap: 20px;
+}
+
+.marqueeContentReverse {
+  display: flex;
+  width: max-content;
+  animation: marqueeReverse 30s linear infinite;
+  gap: 20px;
+}
+
+.marqueeContent:hover, .marqueeContentReverse:hover {
+  animation-play-state: paused;
+}
+
+.skillPill {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 24px;
+  border-radius: 16px;
+  min-width: 250px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skillPill:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 184, 145, 0.3);
+  transform: translateY(-2px);
+}
+
+.skillIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.skillInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.skillType {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 10px)); } /* -10px accounts for half the gap */
+}
+
+@keyframes marqueeReverse {
+  0% { transform: translateX(calc(-50% - 10px)); }
+  100% { transform: translateX(0); }
+}

@@ -5,7 +5,7 @@ export default function Blog() {
     { title: "Building Scalable Architecture with Next.js & Postgres", date: "August 12, 2026", category: "Engineering" },
     { title: "Why Micro-Animations Matter in UI/UX Design", date: "July 28, 2026", category: "Design" },
     { title: "Integrating 3ds Max Models into Web with Three.js", date: "June 15, 2026", category: "3D Web" },
-    { title: "The Truth About Node.js Performance in 2026", date: "May 04, 2026", category: "Backend" },
+    { title: "Building High-Converting Headless Shopify Storefronts", date: "May 04, 2026", category: "E-commerce" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function Blog() {
             <div key={idx} style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.1)', padding: '32px', borderRadius: '16px', transition: 'all 0.3s ease', cursor: 'pointer' }} className="hover:border-[var(--accent-color)]">
               <div style={{ color: 'var(--accent-color)', fontSize: '0.85rem', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '12px' }}>{post.category} &nbsp;•&nbsp; {post.date}</div>
               <h2 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '16px', color: '#fff' }}>{post.title}</h2>
-              <p style={{ color: 'var(--text-secondary)' }}>Read more about the intricacies of {post.category.toLowerCase()} and how I approach these problems in enterprise-scale applications.</p>
+              <p style={{ color: 'var(--text-secondary)' }}>Read more about the intricacies of {post.category.toLowerCase()} and how we approach these problems in enterprise-scale applications.</p>
               <div style={{ marginTop: '20px', color: 'var(--accent-color)', fontWeight: 'bold' }}>Read Article &rarr;</div>
             </div>
           ))}
