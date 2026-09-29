@@ -12,22 +12,26 @@
   display: flex;
   gap: 16px;
 }
+
 .heroBtnPrimary {
   padding: 12px 32px;
 }
+
 .heroBtnSecondary {
   padding: 12px 24px;
   background: transparent;
-  border-color: rgba(255,255,255,0.1);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 500px) {
+
   .heroButtonGroup,
   .ctaFinalButtons {
     flex-direction: column !important;
     gap: 12px !important;
     width: 100%;
   }
+
   .heroBtnPrimary,
   .heroBtnSecondary,
   .ctaFinalBtnPrimary,
@@ -54,7 +58,7 @@
 
 @media (max-width: 992px) {
   .hero {
-    padding: 10px 0 40px;
+    padding: 30px 0 40px;
     align-items: flex-start;
   }
 }
@@ -756,6 +760,7 @@
   .navLinks {
     display: none;
   }
+
   .navLinksMobile {
     display: flex !important;
     position: fixed;
@@ -774,7 +779,7 @@
     z-index: -1;
     animation: fadeInMenu 0.4s ease-out forwards;
   }
-  
+
   .navLinksMobile::before {
     content: '';
     position: absolute;
@@ -804,16 +809,27 @@
     animation: slideUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 
-  .navLinksMobile .navLink:nth-child(1) { animation-delay: 0.1s; }
-  .navLinksMobile .navLink:nth-child(2) { animation-delay: 0.2s; }
-  .navLinksMobile .navLink:nth-child(3) { animation-delay: 0.3s; }
-  .navLinksMobile .navLink:nth-child(4) { animation-delay: 0.4s; }
+  .navLinksMobile .navLink:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .navLinksMobile .navLink:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .navLinksMobile .navLink:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .navLinksMobile .navLink:nth-child(4) {
+    animation-delay: 0.4s;
+  }
 
   .navLinksMobile .navLink:active {
     color: var(--accent-color);
     transform: scale(0.95) translateY(0);
   }
-  
+
   .navLinksMobile .navNum {
     display: block;
     font-size: 1.1rem;
@@ -822,7 +838,7 @@
     font-family: monospace;
     opacity: 0.8;
   }
-  
+
   .navMobileFooter {
     position: absolute;
     bottom: 50px;
@@ -833,13 +849,13 @@
     transform: translateY(20px);
     animation: slideUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
   }
-  
+
   .navMobileFooter a {
     color: var(--text-secondary);
     text-decoration: none;
     transition: color 0.3s ease;
   }
-  
+
   .navMobileFooter a:hover {
     color: var(--accent-color);
   }
@@ -852,28 +868,34 @@
   }
 
   @keyframes fadeInMenu {
-    from { 
-      opacity: 0; 
-      backdrop-filter: blur(0px); 
+    from {
+      opacity: 0;
+      backdrop-filter: blur(0px);
     }
-    to { 
-      opacity: 1; 
-      backdrop-filter: blur(24px); 
+
+    to {
+      opacity: 1;
+      backdrop-filter: blur(24px);
     }
   }
+
   .mobileMenuBtn {
     display: block;
   }
+
   .navbar {
     margin: 20px 16px -10px 16px;
   }
+
   .desktopBtn {
     display: none !important;
   }
+
   .mobileOnlyBtn,
   .mobileOnlyMenu {
     display: block !important;
   }
+
   .mobileOnlyBtn {
     margin-top: 40px;
     width: 100%;
