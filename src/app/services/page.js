@@ -43,7 +43,7 @@ export default function Services() {
                   Fully responsive design
                 </li>
               </ul>
-              <Link href="/contact" className={styles.serviceButton}>View Design Portfolio &rarr;</Link>
+              <Link href="/services/frontend-excellence" className={styles.serviceButton}>View Frontend Details &rarr;</Link>
             </div>
 
             {/* Card 2 */}
@@ -71,7 +71,7 @@ export default function Services() {
                   Serverless Edge Functions
                 </li>
               </ul>
-              <Link href="/contact" className={styles.serviceButton}>Get a Free Quote &rarr;</Link>
+              <Link href="/services/custom-saas" className={styles.serviceButton}>View SaaS Architecture &rarr;</Link>
             </div>
 
             {/* Card 3 */}
@@ -100,7 +100,7 @@ export default function Services() {
                   Automated CI/CD pipelines
                 </li>
               </ul>
-              <Link href="/contact" className={styles.serviceButton}>Discuss Architecture &rarr;</Link>
+              <Link href="/services/cloud-architecture" className={styles.serviceButton}>Discuss Architecture &rarr;</Link>
             </div>
 
             {/* Card 4 */}
@@ -129,7 +129,7 @@ export default function Services() {
                   Zapier & Workflow Automation
                 </li>
               </ul>
-              <Link href="/contact" className={styles.serviceButton}>Explore AI Solutions &rarr;</Link>
+              <Link href="/services/ai-automation" className={styles.serviceButton}>Explore AI Solutions &rarr;</Link>
             </div>
 
             {/* Card 5 */}
@@ -157,7 +157,7 @@ export default function Services() {
                   Photorealistic texturing
                 </li>
               </ul>
-              <Link href="/contact" className={styles.serviceButton}>View 3D Portfolio &rarr;</Link>
+              <Link href="/services/webgl-3d-configurators" className={styles.serviceButton}>View 3D Portfolio &rarr;</Link>
             </div>
             {/* Card 6 */}
             <div className={styles.serviceCard}>
@@ -184,7 +184,7 @@ export default function Services() {
                   High-converting checkouts
                 </li>
               </ul>
-              <Link href="/contact" className={styles.serviceButton}>Build Your Store &rarr;</Link>
+              <Link href="/services/headless-shopify" className={styles.serviceButton}>Learn More &rarr;</Link>
             </div>
           </div>
         </div>
