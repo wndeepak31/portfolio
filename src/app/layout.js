@@ -26,11 +26,13 @@ export const metadata = {
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ConditionalCTA from "../components/ConditionalCTA";
+import CanonicalLink from "../components/CanonicalLink";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <CanonicalLink />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
