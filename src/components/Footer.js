@@ -1,5 +1,6 @@
 "use client";
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../app/page.module.css';
 
 export default function Footer() {
@@ -9,7 +10,13 @@ export default function Footer() {
         <div className={styles.footerFinalGrid}>
           <div className={styles.footerFinalBrand}>
             <div className={styles.logo} style={{ display: 'flex', alignItems: 'center' }}>
-              <img src="/apexTechPlus-logo.png" alt="ApexTech Logo" style={{ height: '28px', width: 'auto' }} />
+              <Image 
+                src="/apexTechPlus-logo.png" 
+                alt="ApexTech+ Logo" 
+                width={161} 
+                height={28} 
+                style={{ height: '28px', width: 'auto' }} 
+              />
             </div>
             <p>
               A global premier full-stack infrastructure platform. We empower founders with institutional-grade web architecture, custom algorithmic backend development, and ultra-fast application deployment.
@@ -26,7 +33,7 @@ export default function Footer() {
             </div>
           </div>
           <div className={styles.footerFinalLinks}>
-            <h4>Platform</h4>
+            <h3>Platform</h3>
             <ul>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/how-to-work-with-us">How to Work With Us</Link></li>
@@ -35,7 +42,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className={styles.footerFinalLinks}>
-            <h4>Company</h4>
+            <h3>Company</h3>
             <ul>
               <li><Link href="/company">Company</Link></li>
 
@@ -50,7 +57,7 @@ export default function Footer() {
             </div>
           </div>
           <div className={styles.footerFinalLinks}>
-            <h4>Legal</h4>
+            <h3>Legal</h3>
             <ul>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <li><Link href="/terms">Terms & Conditions</Link></li>
@@ -60,10 +67,10 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.footerFinalBottom} style={{ textAlign: 'center', display: 'block', borderTop: 'none', paddingTop: '0' }}>
-          <p style={{ color: '#4b5563', fontSize: '0.75rem', maxWidth: '900px', margin: '0 auto 10px', lineHeight: '1.6' }}>
+          <p style={{ color: '#9ca3af', fontSize: '0.8rem', maxWidth: '900px', margin: '0 auto 10px', lineHeight: '1.6' }}>
             Disclaimer: ApexTech+ is an elite collective of full-stack engineers and UI/UX architects. Any project timelines, performance metrics, and server capacities discussed are estimates based on past projects and may vary depending on individual requirements.
           </p>
-          <p style={{ color: '#4b5563', fontSize: '0.75rem' }}>
+          <p style={{ color: '#9ca3af', fontSize: '0.8rem' }}>
             &copy; {new Date().getFullYear()} ApexTech+. All rights reserved.
           </p>
         </div>

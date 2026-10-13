@@ -1497,6 +1497,7 @@
   letter-spacing: 1px;
 }
 
+.testimonialAuthorInfo h3,
 .testimonialAuthorInfo h4 {
   color: #fff;
   font-size: 1rem;
@@ -1505,7 +1506,7 @@
 }
 
 .testimonialAuthorInfo p {
-  color: #6b7280;
+  color: #9ca3af;
   font-size: 0.85rem;
 }
 
@@ -1767,8 +1768,8 @@
 }
 
 .ctaFinalNote {
-  color: #6b7280;
-  font-size: 0.8rem;
+  color: #9ca3af;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
@@ -1806,6 +1807,7 @@
   margin-top: 20px;
 }
 
+.footerFinalLinks h3,
 .footerFinalLinks h4 {
   color: #fff;
   font-size: 0.95rem;

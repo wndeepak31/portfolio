@@ -1,4 +1,17 @@
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-outfit",
+});
 
 export const metadata = {
   metadataBase: new URL('https://www.apextechplus.com'),
@@ -38,7 +51,7 @@ import ConditionalCTA from "../components/ConditionalCTA";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -61,7 +74,9 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning>
         <Navbar />
-        {children}
+        <main id="main-content">
+          {children}
+        </main>
         <ConditionalCTA />
         <Footer />
       </body>

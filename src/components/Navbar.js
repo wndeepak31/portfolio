@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../app/page.module.css';
 
 export default function Navbar() {
@@ -9,7 +10,14 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar} style={{ position: 'sticky', top: '20px', zIndex: 100 }}>
       <Link href="/" className={styles.logo} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-        <img src="/apexTechPlus-logo.png" alt="ApexTech Logo" style={{ height: '30px', width: 'auto' }} />
+        <Image 
+          src="/apexTechPlus-logo.png" 
+          alt="ApexTech+ Logo" 
+          width={173} 
+          height={30} 
+          priority 
+          style={{ height: '30px', width: 'auto' }} 
+        />
       </Link>
       <div className={`${styles.navLinks} ${isOpen ? styles.navLinksMobile : ''}`}>
         <Link href="/services" className={styles.navLink} onClick={() => setIsOpen(false)}>Services</Link>
