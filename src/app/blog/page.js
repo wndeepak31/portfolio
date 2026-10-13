@@ -1,4 +1,26 @@
 import Link from 'next/link';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
+export const metadata = {
+  title: 'Read About Software & Web Development Articles - ApexTech+',
+  description: 'Explore the ApexTech+ blog for insights, guides, and updates on software development, web technologies, application development, and digital innovation.',
+  openGraph: {
+    title: 'Read About Software & Web Development Articles - ApexTech+',
+    description: 'Explore the ApexTech+ blog for insights, guides, and updates on software development, web technologies, application development, and digital innovation.',
+    url: 'https://www.apextechplus.com/blog',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Read About Software & Web Development Articles - ApexTech+',
+    description: 'Explore the ApexTech+ blog for insights, guides, and updates on software development, web technologies, application development, and digital innovation.',
+  },
+  alternates: {
+    canonical: '/blog',
+  },
+};
 
 export default function Blog() {
   const posts = [
@@ -10,6 +32,7 @@ export default function Blog() {
 
   return (
     <div style={{ minHeight: '80vh', padding: '30px 20px 100px 20px' }}>
+      <BreadcrumbSchema items={[{ name: 'Blog', path: '/blog' }]} />
       <div className="container">
         <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '20px' }}>Engineering Blog</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '60px' }}>

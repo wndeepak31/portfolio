@@ -1,6 +1,30 @@
+export const metadata = {
+  title: 'Know Our Privacy Policy Guidelines - ApexTech+',
+  description: 'Read the privacy policy of ApexTech+ to learn how we collect, use, protect, and manage your personal information when you visit our website.',
+  openGraph: {
+    title: 'Know Our Privacy Policy Guidelines - ApexTech+',
+    description: 'Read the privacy policy of ApexTech+ to learn how we collect, use, protect, and manage your personal information when you visit our website.',
+    url: 'https://www.apextechplus.com/privacy',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Know Our Privacy Policy Guidelines - ApexTech+',
+    description: 'Read the privacy policy of ApexTech+ to learn how we collect, use, protect, and manage your personal information when you visit our website.',
+  },
+  alternates: {
+    canonical: '/privacy',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function PrivacyPolicy() {
   return (
     <div style={{ minHeight: '80vh', padding: '30px 20px 100px 20px' }}>
+      <BreadcrumbSchema items={[{ name: 'Privacy Policy', path: '/privacy' }]} />
       <div className="container" style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         <h1 style={{ fontSize: '3rem', fontWeight: '800', color: '#fff', marginBottom: '40px' }}>Privacy Policy</h1>
         

@@ -1,6 +1,30 @@
+export const metadata = {
+  title: 'Terms & Conditions Policy of ApexTech+',
+  description: 'Review the Terms & Conditions of ApexTech+ to understand our website usage policies, service agreements, user responsibilities, and applicable terms.',
+  openGraph: {
+    title: 'Terms & Conditions Policy of ApexTech+',
+    description: 'Review the Terms & Conditions of ApexTech+ to understand our website usage policies, service agreements, user responsibilities, and applicable terms.',
+    url: 'https://www.apextechplus.com/terms',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms & Conditions Policy of ApexTech+',
+    description: 'Review the Terms & Conditions of ApexTech+ to understand our website usage policies, service agreements, user responsibilities, and applicable terms.',
+  },
+  alternates: {
+    canonical: '/terms',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function TermsConditions() {
   return (
     <div style={{ minHeight: '80vh', padding: '30px 20px 100px 20px' }}>
+      <BreadcrumbSchema items={[{ name: 'Terms & Conditions', path: '/terms' }]} />
       <div className="container" style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         <h1 style={{ fontSize: '3rem', fontWeight: '800', color: '#fff', marginBottom: '40px' }}>Terms & Conditions</h1>
         

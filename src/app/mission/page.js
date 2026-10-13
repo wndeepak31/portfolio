@@ -1,8 +1,32 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Learn About What Is Our Mission - ApexTech+',
+  description: 'Discover the mission and vision of ApexTech+, our commitment to innovation, and our approach to delivering reliable web development and software solutions.',
+  openGraph: {
+    title: 'Learn About What Is Our Mission - ApexTech+',
+    description: 'Discover the mission and vision of ApexTech+, our commitment to innovation, and our approach to delivering reliable web development and software solutions.',
+    url: 'https://www.apextechplus.com/mission',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Learn About What Is Our Mission - ApexTech+',
+    description: 'Discover the mission and vision of ApexTech+, our commitment to innovation, and our approach to delivering reliable web development and software solutions.',
+  },
+  alternates: {
+    canonical: '/mission',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function Mission() {
   return (
     <div style={{ minHeight: '80vh', padding: '30px 20px 100px 20px' }}>
+      <BreadcrumbSchema items={[{ name: 'Our Mission', path: '/mission' }]} />
       <div className="container" style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         <h1 style={{ fontSize: '3.5rem', fontWeight: '800', color: '#fff', marginBottom: '40px' }}>Our Mission</h1>
         

@@ -29,6 +29,7 @@ export default function Footer() {
             <h4>Platform</h4>
             <ul>
               <li><Link href="/">Home</Link></li>
+              <li><Link href="/how-to-work-with-us">How to Work With Us</Link></li>
               <li><Link href="/faq">FAQs</Link></li>
               <li><Link href="/mission">Our Mission</Link></li>
             </ul>

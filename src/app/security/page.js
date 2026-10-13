@@ -1,6 +1,30 @@
+export const metadata = {
+  title: 'Security Architecture - ApexTech+',
+  description: "Strengthen your digital infrastructure with ApexTech+'s security architecture services, designed to improve application security, protect data, and reduce technology risks.",
+  openGraph: {
+    title: 'Security Architecture - ApexTech+',
+    description: "Strengthen your digital infrastructure with ApexTech+'s security architecture services, designed to improve application security, protect data, and reduce technology risks.",
+    url: 'https://www.apextechplus.com/security',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Security Architecture - ApexTech+',
+    description: "Strengthen your digital infrastructure with ApexTech+'s security architecture services, designed to improve application security, protect data, and reduce technology risks.",
+  },
+  alternates: {
+    canonical: '/security',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function Security() {
   return (
     <div style={{ minHeight: '80vh', padding: '30px 20px 100px 20px' }}>
+      <BreadcrumbSchema items={[{ name: 'Security Architecture', path: '/security' }]} />
       <div className="container" style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         <h1 style={{ fontSize: '3rem', fontWeight: '800', color: '#fff', marginBottom: '40px' }}>Security Architecture</h1>
         

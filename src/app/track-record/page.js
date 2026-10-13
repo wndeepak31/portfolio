@@ -1,9 +1,33 @@
 import styles from '../page.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'ApexTech+ | Elite Enterprise Web Architecture Agency',
+  description: 'ApexTech+ delivers enterprise web architecture solutions, scalable digital platforms, and modern technology systems designed to support business growth.',
+  openGraph: {
+    title: 'ApexTech+ | Elite Enterprise Web Architecture Agency',
+    description: 'ApexTech+ delivers enterprise web architecture solutions, scalable digital platforms, and modern technology systems designed to support business growth.',
+    url: 'https://www.apextechplus.com/track-record',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ApexTech+ | Elite Enterprise Web Architecture Agency',
+    description: 'ApexTech+ delivers enterprise web architecture solutions, scalable digital platforms, and modern technology systems designed to support business growth.',
+  },
+  alternates: {
+    canonical: '/track-record',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function Experience() {
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema items={[{ name: 'Track Record', path: '/track-record' }]} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

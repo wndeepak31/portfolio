@@ -4,35 +4,42 @@ export const metadata = {
   metadataBase: new URL('https://www.apextechplus.com'),
   title: {
     default: "ApexTech+ | Elite Enterprise Web Architecture Agency",
-    template: "%s | ApexTech+"
+    template: "%s"
   },
-  description: "We partner with visionary founders and enterprises to build highly scalable Custom SaaS applications, Headless Shopify storefronts, and WebGL interactive experiences.",
-  keywords: ["custom software development", "headless ecommerce agency", "Next.js development firm", "SaaS architecture", "WebGL 3D configurators"],
+  description: "Partner with ApexTech+ for enterprise web architecture solutions that prioritize scalability, performance, security, and reliable digital infrastructure.",
+  keywords: [
+    "enterprise web architecture",
+    "custom software development",
+    "headless shopify agency",
+    "Next.js development firm",
+    "SaaS architecture",
+    "WebGL 3D configurators",
+    "cloud migration services",
+    "AI automation"
+  ],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.apextechplus.com",
     siteName: "ApexTech+",
-    title: "ApexTech+ | Elite Enterprise Web Architecture",
-    description: "Enterprise-grade React, Next.js, and Node.js development.",
+    title: "ApexTech+ | Elite Enterprise Web Architecture Agency",
+    description: "Partner with ApexTech+ for enterprise web architecture solutions that prioritize scalability, performance, security, and reliable digital infrastructure.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ApexTech+ | Elite Web Architecture",
-    description: "Enterprise custom SaaS and headless ecommerce development.",
+    title: "ApexTech+ | Elite Enterprise Web Architecture Agency",
+    description: "Partner with ApexTech+ for enterprise web architecture solutions that prioritize scalability, performance, security, and reliable digital infrastructure.",
   }
 };
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ConditionalCTA from "../components/ConditionalCTA";
-import CanonicalLink from "../components/CanonicalLink";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <CanonicalLink />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -2,14 +2,37 @@ import styles from '../../page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Elite Front-End Development Agency | Next.js & React',
-  description: 'Pixel-perfect, high-performance frontend development. We specialize in enterprise React, Next.js, and complex interactive UI/UX engineering.',
-  keywords: 'enterprise front-end development agency, hire next.js developers, custom react ui ux, responsive web application design, high-performance web development',
+  title: 'Elite Front-End Development Agency | Next.js & React | ApexTech+',
+  description: 'Discover expert front-end development services from ApexTech+, specializing in React and Next.js to build fast, responsive, and user-friendly web applications.',
+  openGraph: {
+    title: 'Elite Front-End Development Agency | Next.js & React | ApexTech+',
+    description: 'Discover expert front-end development services from ApexTech+, specializing in React and Next.js to build fast, responsive, and user-friendly web applications.',
+    url: 'https://www.apextechplus.com/services/frontend-excellence',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Elite Front-End Development Agency | Next.js & React | ApexTech+',
+    description: 'Discover expert front-end development services from ApexTech+, specializing in React and Next.js to build fast, responsive, and user-friendly web applications.',
+  },
+  alternates: {
+    canonical: '/services/frontend-excellence',
+  },
 };
+
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
 
 export default function FrontendExcellence() {
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Services', path: '/services' },
+          { name: 'Front-End Excellence', path: '/services/frontend-excellence' },
+        ]}
+      />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

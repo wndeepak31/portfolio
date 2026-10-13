@@ -1,9 +1,33 @@
 import styles from '../page.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Elite Enterprise Web Architecture Agency - ApexTech+',
+  description: "Transform your digital infrastructure with ApexTech+'s enterprise web architecture services, designed for scalability, performance, security, and long-term growth.",
+  openGraph: {
+    title: 'Elite Enterprise Web Architecture Agency - ApexTech+',
+    description: "Transform your digital infrastructure with ApexTech+'s enterprise web architecture services, designed for scalability, performance, security, and long-term growth.",
+    url: 'https://www.apextechplus.com/services',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Elite Enterprise Web Architecture Agency - ApexTech+',
+    description: "Transform your digital infrastructure with ApexTech+'s enterprise web architecture services, designed for scalability, performance, security, and long-term growth.",
+  },
+  alternates: {
+    canonical: '/services',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function Services() {
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema items={[{ name: 'Services', path: '/services' }]} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

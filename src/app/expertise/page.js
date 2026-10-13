@@ -2,6 +2,29 @@ import styles from '../page.module.css';
 import Link from 'next/link';
 import marqueeStyles from './marquee.module.css';
 
+export const metadata = {
+  title: 'Expertise in Software, Website & App - ApexTech+',
+  description: "Explore ApexTech+'s expertise in software development, website design, and mobile app development, delivering customized digital solutions to meet business needs.",
+  openGraph: {
+    title: 'Expertise in Software, Website & App - ApexTech+',
+    description: "Explore ApexTech+'s expertise in software development, website design, and mobile app development, delivering customized digital solutions to meet business needs.",
+    url: 'https://www.apextechplus.com/expertise',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Expertise in Software, Website & App - ApexTech+',
+    description: "Explore ApexTech+'s expertise in software development, website design, and mobile app development, delivering customized digital solutions to meet business needs.",
+  },
+  alternates: {
+    canonical: '/expertise',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function Skills() {
   const row1 = [
     { name: "Next.js", icon: "https://cdn.simpleicons.org/nextdotjs/white", type: "Framework" },
@@ -30,6 +53,7 @@ export default function Skills() {
 
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema items={[{ name: 'Expertise', path: '/expertise' }]} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

@@ -2,14 +2,37 @@ import styles from '../../page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Data & Cloud Architecture Migration Services | ApexTech+',
-  description: 'Enterprise cloud architecture and database design. We specialize in AWS/Vercel deployment, PostgreSQL modeling, and high-availability caching systems.',
-  keywords: 'aws cloud migration services, enterprise database architecture, scalable cloud infrastructure, postgresql database design, redis caching implementation',
+  title: 'Data & Cloud Architecture Migration Services - ApexTech+',
+  description: "Modernize your infrastructure with ApexTech+'s data and cloud architecture migration services, enabling secure data management, scalable systems, and improved efficiency.",
+  openGraph: {
+    title: 'Data & Cloud Architecture Migration Services - ApexTech+',
+    description: "Modernize your infrastructure with ApexTech+'s data and cloud architecture migration services, enabling secure data management, scalable systems, and improved efficiency.",
+    url: 'https://www.apextechplus.com/services/cloud-architecture',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Data & Cloud Architecture Migration Services - ApexTech+',
+    description: "Modernize your infrastructure with ApexTech+'s data and cloud architecture migration services, enabling secure data management, scalable systems, and improved efficiency.",
+  },
+  alternates: {
+    canonical: '/services/cloud-architecture',
+  },
 };
+
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
 
 export default function CloudArchitecture() {
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Services', path: '/services' },
+          { name: 'Data & Cloud Architecture', path: '/services/cloud-architecture' },
+        ]}
+      />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

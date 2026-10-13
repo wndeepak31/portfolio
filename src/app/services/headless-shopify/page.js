@@ -3,13 +3,36 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Headless Shopify Development Agency | ApexTech+',
-  description: 'Elite headless Shopify development services. We build custom, blazing-fast decoupled e-commerce storefronts using Next.js and the Shopify Storefront API.',
-  keywords: 'headless shopify development agency, headless shopify development company, headless shopify development services, headless shopify development expert',
+  description: "Build a powerful eCommerce store with ApexTech+'s headless Shopify development services, featuring custom storefronts, flexible architecture, and seamless integrations.",
+  openGraph: {
+    title: 'Headless Shopify Development Agency | ApexTech+',
+    description: "Build a powerful eCommerce store with ApexTech+'s headless Shopify development services, featuring custom storefronts, flexible architecture, and seamless integrations.",
+    url: 'https://www.apextechplus.com/services/headless-shopify',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Headless Shopify Development Agency | ApexTech+',
+    description: "Build a powerful eCommerce store with ApexTech+'s headless Shopify development services, featuring custom storefronts, flexible architecture, and seamless integrations.",
+  },
+  alternates: {
+    canonical: '/services/headless-shopify',
+  },
 };
+
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
 
 export default function HeadlessShopify() {
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Services', path: '/services' },
+          { name: 'Headless Shopify', path: '/services/headless-shopify' },
+        ]}
+      />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

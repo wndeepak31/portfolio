@@ -1,8 +1,32 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'FAQ - Answer To Your Questions - ApexTech+',
+  description: "Find answers to common questions about ApexTech+'s services, web development, software solutions, project processes, and technical support.",
+  openGraph: {
+    title: 'FAQ - Answer To Your Questions - ApexTech+',
+    description: "Find answers to common questions about ApexTech+'s services, web development, software solutions, project processes, and technical support.",
+    url: 'https://www.apextechplus.com/faq',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FAQ - Answer To Your Questions - ApexTech+',
+    description: "Find answers to common questions about ApexTech+'s services, web development, software solutions, project processes, and technical support.",
+  },
+  alternates: {
+    canonical: '/faq',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function FAQ() {
   return (
     <div style={{ minHeight: '80vh', padding: '30px 20px 100px 20px' }}>
+      <BreadcrumbSchema items={[{ name: 'FAQ', path: '/faq' }]} />
       <div className="container">
         <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '20px' }}>Frequently Asked Questions</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '60px', maxWidth: '700px' }}>

@@ -1,6 +1,30 @@
+export const metadata = {
+  title: 'Refund & Policy at ApexTech+',
+  description: "Learn about ApexTech+'s refund policy, including applicable refund conditions, service cancellation guidelines, eligibility requirements, and procedures for requesting a refund.",
+  openGraph: {
+    title: 'Refund & Policy at ApexTech+',
+    description: "Learn about ApexTech+'s refund policy, including applicable refund conditions, service cancellation guidelines, eligibility requirements, and procedures for requesting a refund.",
+    url: 'https://www.apextechplus.com/refund',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Refund & Policy at ApexTech+',
+    description: "Learn about ApexTech+'s refund policy, including applicable refund conditions, service cancellation guidelines, eligibility requirements, and procedures for requesting a refund.",
+  },
+  alternates: {
+    canonical: '/refund',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function RefundPolicy() {
   return (
     <div style={{ minHeight: '80vh', padding: '30px 20px 100px 20px' }}>
+      <BreadcrumbSchema items={[{ name: 'Refund Policy', path: '/refund' }]} />
       <div className="container" style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         <h1 style={{ fontSize: '3rem', fontWeight: '800', color: '#fff', marginBottom: '40px' }}>Refund Policy</h1>
         

@@ -2,14 +2,37 @@ import styles from '../../page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Custom SaaS Architecture & Web App Development Agency',
-  description: 'Expert custom SaaS architecture and web application development. We specialize in scaling Node.js applications, building enterprise React/Next.js platforms, and optimizing costs.',
-  keywords: 'custom saas architecture, scale node js application, cost to build custom web app, react vs nextjs for web app, enterprise web application development',
+  title: 'Custom SaaS Architecture & Web App Development Agency | ApexTech+',
+  description: 'Build scalable SaaS platforms and custom web applications with ApexTech+. We deliver tailored software architecture, robust functionality, and seamless user experiences.',
+  openGraph: {
+    title: 'Custom SaaS Architecture & Web App Development Agency | ApexTech+',
+    description: 'Build scalable SaaS platforms and custom web applications with ApexTech+. We deliver tailored software architecture, robust functionality, and seamless user experiences.',
+    url: 'https://www.apextechplus.com/services/custom-saas',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom SaaS Architecture & Web App Development Agency | ApexTech+',
+    description: 'Build scalable SaaS platforms and custom web applications with ApexTech+. We deliver tailored software architecture, robust functionality, and seamless user experiences.',
+  },
+  alternates: {
+    canonical: '/services/custom-saas',
+  },
 };
+
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
 
 export default function CustomSaaS() {
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Services', path: '/services' },
+          { name: 'Custom SaaS Architecture', path: '/services/custom-saas' },
+        ]}
+      />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

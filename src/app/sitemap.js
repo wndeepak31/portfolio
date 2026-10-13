@@ -12,7 +12,7 @@ export default function sitemap() {
     { path: '/mission', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/faq', priority: 0.8, changeFrequency: 'weekly' },
     { path: '/blog', priority: 0.7, changeFrequency: 'weekly' },
-    { path: '/how-to-use', priority: 0.6, changeFrequency: 'monthly' },
+    { path: '/how-to-work-with-us', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/contact', priority: 0.8, changeFrequency: 'monthly' },
 
     // Core Service Specializations

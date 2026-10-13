@@ -2,14 +2,37 @@ import styles from '../../page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Enterprise AI & Business Automation Agency | ApexTech+',
-  description: 'Custom AI solutions, RAG pipelines, and intelligent workflow automation to drastically scale business efficiency.',
-  keywords: 'enterprise ai automation, custom ai agents, openai api integration services, rag pipeline development, automated business workflows',
+  title: 'Enterprise AI & Business Automation Agency - ApexTech+',
+  description: "Accelerate business growth with ApexTech+'s enterprise AI and business automation services, streamlining workflows, improving efficiency, and enabling smarter operations.",
+  openGraph: {
+    title: 'Enterprise AI & Business Automation Agency - ApexTech+',
+    description: "Accelerate business growth with ApexTech+'s enterprise AI and business automation services, streamlining workflows, improving efficiency, and enabling smarter operations.",
+    url: 'https://www.apextechplus.com/services/ai-automation',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Enterprise AI & Business Automation Agency - ApexTech+',
+    description: "Accelerate business growth with ApexTech+'s enterprise AI and business automation services, streamlining workflows, improving efficiency, and enabling smarter operations.",
+  },
+  alternates: {
+    canonical: '/services/ai-automation',
+  },
 };
+
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
 
 export default function AiAutomation() {
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Services', path: '/services' },
+          { name: 'AI & Automation', path: '/services/ai-automation' },
+        ]}
+      />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

@@ -2,14 +2,37 @@ import styles from '../../page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'WebGL & Three.js Development Agency | Custom 3D Product Configurators',
-  description: 'Top-rated services offering custom 3D product configurators for e-commerce websites. We specialize in WebGL and Three.js interactive web development.',
-  keywords: '3D product configurator web, WebGL web development, three.js interactive website, professional developers specializing in WebGL and Three.js',
+  title: 'WebGL & Three.js Development Agency | Custom 3D Product Configurators | ApexTech+',
+  description: 'Explore WebGL and Three.js development services by ApexTech+. We create immersive 3D web experiences, interactive visuals, and custom product configurators.',
+  openGraph: {
+    title: 'WebGL & Three.js Development Agency | Custom 3D Product Configurators | ApexTech+',
+    description: 'Explore WebGL and Three.js development services by ApexTech+. We create immersive 3D web experiences, interactive visuals, and custom product configurators.',
+    url: 'https://www.apextechplus.com/services/webgl-3d-configurators',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'WebGL & Three.js Development Agency | Custom 3D Product Configurators | ApexTech+',
+    description: 'Explore WebGL and Three.js development services by ApexTech+. We create immersive 3D web experiences, interactive visuals, and custom product configurators.',
+  },
+  alternates: {
+    canonical: '/services/webgl-3d-configurators',
+  },
 };
+
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
 
 export default function WebGLConfigurators() {
   return (
     <div style={{ minHeight: '80vh' }}>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Services', path: '/services' },
+          { name: 'WebGL & 3D Configurators', path: '/services/webgl-3d-configurators' },
+        ]}
+      />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

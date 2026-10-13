@@ -1,9 +1,33 @@
 import Link from 'next/link';
 import styles from './about.module.css';
 
+export const metadata = {
+  title: 'About Us - We Are Complete Web & Software Solutions',
+  description: 'Learn more about ApexTech+, our team, values, and expertise in delivering comprehensive web development, custom software, and digital technology solutions.',
+  openGraph: {
+    title: 'About Us - We Are Complete Web & Software Solutions',
+    description: 'Learn more about ApexTech+, our team, values, and expertise in delivering comprehensive web development, custom software, and digital technology solutions.',
+    url: 'https://www.apextechplus.com/company',
+    siteName: 'ApexTech+',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us - We Are Complete Web & Software Solutions',
+    description: 'Learn more about ApexTech+, our team, values, and expertise in delivering comprehensive web development, custom software, and digital technology solutions.',
+  },
+  alternates: {
+    canonical: '/company',
+  },
+};
+
+import BreadcrumbSchema from '../../components/BreadcrumbSchema';
+
 export default function About() {
   return (
     <div>
+      <BreadcrumbSchema items={[{ name: 'Company', path: '/company' }]} />
       <section className={styles.aboutSection}>
         <div className="container">
           <div className={styles.breadcrumbs}>
