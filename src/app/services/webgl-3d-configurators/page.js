@@ -23,6 +23,7 @@ export const metadata = {
 };
 
 import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
+import JewelryConfiguratorShowcase from '../../../components/JewelryConfiguratorShowcase';
 
 export default function WebGLConfigurators() {
   return (
@@ -68,6 +69,8 @@ export default function WebGLConfigurators() {
               <p>We integrate Three.js seamlessly into modern web development workflows (like Next.js). Our 3D models are heavily optimized for mobile devices, ensuring silky smooth 60FPS performance on any screen.</p>
             </div>
           </div>
+
+          <JewelryConfiguratorShowcase />
 
           <div style={{ marginTop: '80px', marginBottom: '40px' }}>
             <div className={styles.serviceEyebrow}>3D DEVELOPMENT FAQS</div>

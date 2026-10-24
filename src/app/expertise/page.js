@@ -95,6 +95,73 @@ export default function Skills() {
               ))}
             </div>
           </div>
+
+          {/* 3D / WebGL Specialized Architecture Showcase Reference */}
+          <div style={{ marginTop: '80px', paddingTop: '60px', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+            <div style={{ textAlign: 'center', marginBottom: '16px' }}>
+              <span style={{ display: 'inline-block', padding: '6px 16px', background: 'rgba(0, 184, 145, 0.1)', color: 'var(--accent-color)', borderRadius: '9999px', fontSize: '0.85rem', fontWeight: '700', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                Featured 3D & WebGL Capabilities
+              </span>
+            </div>
+            
+            <h2 style={{ fontSize: '2.5rem', fontWeight: '800', textAlign: 'center', marginBottom: '18px', color: '#fff' }}>
+              Real-Time <span className="text-accent">3D Product & Jewelry Configurators</span>
+            </h2>
+            
+            <p style={{ textAlign: 'center', color: 'var(--text-secondary)', maxWidth: '720px', margin: '0 auto 40px', fontSize: '1.1rem', lineHeight: '1.6' }}>
+              We harness Three.js and custom WebGL shaders to deliver interactive 60 FPS 3D configurators with physical light refraction, instant diamond customization, and headless Shopify integration.
+            </p>
+
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(10, 15, 12, 0.85) 0%, rgba(5, 11, 10, 0.95) 100%)',
+              border: '1px solid rgba(0, 184, 145, 0.25)',
+              borderRadius: '24px',
+              padding: '36px',
+              maxWidth: '960px',
+              margin: '0 auto 40px',
+              boxShadow: '0 20px 50px rgba(0,0,0,0.5), 0 0 35px rgba(0,184,145,0.08)'
+            }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '20px', marginBottom: '24px' }}>
+                <div>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '4px 12px', borderRadius: '9999px', background: 'rgba(0, 184, 145, 0.12)', border: '1px solid rgba(0, 184, 145, 0.3)', color: 'var(--accent-color)', fontSize: '0.72rem', fontWeight: '700', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '12px' }}>
+                    ✦ LIVE WEBGL PRODUCTION SHOWCASE
+                  </div>
+                  <h3 style={{ fontSize: '1.6rem', fontWeight: '700', color: '#fff', marginBottom: '8px' }}>
+                    Luxury Jewelry 3D Configurator Studio
+                  </h3>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', maxWidth: '580px', lineHeight: '1.5' }}>
+                    Experience our embedded 3D WebGL ring configurator featuring real-time diamond refraction, 360° orbit controls, and headless e-commerce specifications.
+                  </p>
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', minWidth: '220px' }}>
+                  <Link href="/#3d-configurator" className="btn-primary" style={{ textAlign: 'center', fontSize: '0.9rem', padding: '12px 20px' }}>
+                    View Showcase on Home ↗
+                  </Link>
+                  <a href="https://jewel-render-studio.vercel.app" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ textAlign: 'center', fontSize: '0.9rem', padding: '11px 20px' }}>
+                    Launch Live Studio ↗
+                  </a>
+                </div>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '20px' }}>
+                <div style={{ background: 'rgba(255, 255, 255, 0.02)', padding: '12px 16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Engine</div>
+                  <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#fff', marginTop: '2px' }}>Three.js / WebGL (60 FPS)</div>
+                </div>
+                <div style={{ background: 'rgba(255, 255, 255, 0.02)', padding: '12px 16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Performance</div>
+                  <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#fff', marginTop: '2px' }}>Draco & KTX2 Optimization</div>
+                </div>
+                <div style={{ background: 'rgba(255, 255, 255, 0.02)', padding: '12px 16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Service Guide</div>
+                  <Link href="/services/webgl-3d-configurators" style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--accent-color)', marginTop: '2px', display: 'inline-block' }}>
+                    Read WebGL Services →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
           
         </div>
       </section>

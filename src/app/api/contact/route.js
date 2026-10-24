@@ -1,12 +1,18 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export const dynamic = 'force-dynamic';
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is not configured');
+      return NextResponse.json({ error: 'Contact service unavailable' }, { status: 503 });
+    }
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const body = await request.json();
     const { name, email, company, message, phone, _honeypot } = body;
 

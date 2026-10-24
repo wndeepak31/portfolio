@@ -3,6 +3,17 @@ import { useRef } from 'react';
 import Link from 'next/link';
 import styles from "./page.module.css";
 import marqueeStyles from "./expertise/marquee.module.css";
+import dynamic from 'next/dynamic';
+
+const JewelryConfiguratorShowcase = dynamic(
+  () => import('../components/JewelryConfiguratorShowcase'),
+  {
+    ssr: false,
+    loading: () => (
+      <div style={{ height: '440px', width: '100%', borderRadius: '20px', background: 'rgba(255,255,255,0.02)', margin: '40px 0' }} />
+    ),
+  }
+);
 
 export default function HomeClient() {
   const scrollRef = useRef(null);
@@ -227,6 +238,9 @@ export default function HomeClient() {
             </div>
           </div>
         </section>
+
+        {/* 3D WebGL Configurator Showcase (Flagship Proof of Capability) */}
+        <JewelryConfiguratorShowcase />
 
 
         {/* 6. How My Process Works */}
