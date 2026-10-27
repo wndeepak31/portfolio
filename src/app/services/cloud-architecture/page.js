@@ -23,6 +23,22 @@ export const metadata = {
 };
 
 import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
+import FAQSchema from '../../../components/FAQSchema';
+
+const cloudFaqs = [
+  {
+    question: 'Should I use AWS, Vercel, or Google Cloud?',
+    answer: 'It depends entirely on your stack and team size. Vercel is the absolute best for Next.js applications and rapid frontend deployment. AWS provides unmatched control for complex microservices and heavy background processing. We often use a hybrid approach—deploying the frontend on Vercel Edge and the backend on AWS.',
+  },
+  {
+    question: 'Why is my database querying so slow?',
+    answer: 'Slow databases are usually the result of poor schema design, lack of proper indexing, or the N+1 query problem. We resolve this by restructuring your schema, adding precise indexes, and implementing a Redis caching layer to absorb heavy read traffic.',
+  },
+  {
+    question: 'Can you migrate our legacy app to the cloud?',
+    answer: 'Yes. We specialize in zero-downtime cloud migrations. We map your current infrastructure, containerize the application using Docker, set up automated CI/CD pipelines, and securely transfer your data to modern managed databases.',
+  },
+];
 
 export default function CloudArchitecture() {
   return (
@@ -33,6 +49,7 @@ export default function CloudArchitecture() {
           { name: 'Data & Cloud Architecture', path: '/services/cloud-architecture' },
         ]}
       />
+      <FAQSchema items={cloudFaqs} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

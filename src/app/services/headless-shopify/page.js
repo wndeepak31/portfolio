@@ -2,11 +2,19 @@ import styles from '../../page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Headless Shopify Development Agency | ApexTech+',
-  description: "Build a powerful eCommerce store with ApexTech+'s headless Shopify development services, featuring custom storefronts, flexible architecture, and seamless integrations.",
+  title: 'Headless Shopify Agency & Next.js Developers | ApexTech+',
+  description: 'Premier Headless Shopify agency specializing in high-performance Next.js storefronts, sub-second page speeds, Storefront API integrations, and custom headless e-commerce.',
+  keywords: [
+    'headless shopify agency',
+    'headless shopify development',
+    'shopify storefront api',
+    'nextjs shopify agency',
+    'shopify custom storefront',
+    'headless ecommerce agency',
+  ],
   openGraph: {
-    title: 'Headless Shopify Development Agency | ApexTech+',
-    description: "Build a powerful eCommerce store with ApexTech+'s headless Shopify development services, featuring custom storefronts, flexible architecture, and seamless integrations.",
+    title: 'Headless Shopify Agency & Next.js Developers | ApexTech+',
+    description: 'Premier Headless Shopify agency specializing in high-performance Next.js storefronts, sub-second page speeds, Storefront API integrations, and custom headless e-commerce.',
     url: 'https://www.apextechplus.com/services/headless-shopify',
     siteName: 'ApexTech+',
     locale: 'en_US',
@@ -14,8 +22,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Headless Shopify Development Agency | ApexTech+',
-    description: "Build a powerful eCommerce store with ApexTech+'s headless Shopify development services, featuring custom storefronts, flexible architecture, and seamless integrations.",
+    title: 'Headless Shopify Agency & Next.js Developers | ApexTech+',
+    description: 'Premier Headless Shopify agency specializing in high-performance Next.js storefronts, sub-second page speeds, Storefront API integrations, and custom headless e-commerce.',
   },
   alternates: {
     canonical: '/services/headless-shopify',
@@ -23,6 +31,26 @@ export const metadata = {
 };
 
 import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
+import FAQSchema from '../../../components/FAQSchema';
+
+const headlessFaqs = [
+  {
+    question: 'What does a headless Shopify agency do?',
+    answer: 'A headless Shopify agency decouples the front-end user experience (built with modern frameworks like Next.js or React) from Shopify backend commerce engine. We leverage the Shopify Storefront API to deliver sub-second page speeds, custom checkout flows, and infinite design freedom while keeping Shopify robust inventory and payment systems intact.',
+  },
+  {
+    question: 'How can I increase the page load speed on Shopify?',
+    answer: 'The most effective way to drastically improve Shopify page loading speed is by migrating to a headless architecture using the Storefront API and a modern framework like Next.js. This eliminates heavy liquid theme code and third-party app bloat.',
+  },
+  {
+    question: 'Is headless Shopify worth it for my store?',
+    answer: 'For enterprise brands generating significant revenue, absolutely. The sub-second load times lead to significantly higher conversion rates, and the decoupled frontend allows for infinite customization that standard Shopify templates cannot support.',
+  },
+  {
+    question: 'How much does headless Shopify development cost?',
+    answer: 'Headless development is a premium service requiring custom front-end architecture (usually React/Next.js) and API integration. While the initial investment is higher than buying a basic theme, the ROI from increased conversions often pays for itself rapidly for high-volume stores.',
+  },
+];
 
 export default function HeadlessShopify() {
   return (
@@ -33,6 +61,7 @@ export default function HeadlessShopify() {
           { name: 'Headless Shopify', path: '/services/headless-shopify' },
         ]}
       />
+      <FAQSchema items={headlessFaqs} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>
@@ -74,6 +103,11 @@ export default function HeadlessShopify() {
             <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '40px' }}>Common Headless Shopify Questions</h2>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div style={{ padding: '24px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '12px' }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: '#fff' }}>What does a headless Shopify agency do?</h3>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>A headless Shopify agency decouples your front-end user experience (built with modern frameworks like Next.js or React) from Shopify backend commerce engine. We leverage the Shopify Storefront API to deliver sub-second page speeds, custom checkout flows, and infinite design freedom while keeping Shopify robust inventory and payment systems intact.</p>
+              </div>
+
               <div style={{ padding: '24px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '12px' }}>
                 <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: '#fff' }}>How can I increase the page load speed on Shopify?</h3>
                 <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>The most effective way to drastically improve Shopify page loading speed is by migrating to a headless architecture using the Storefront API and a modern framework like Next.js. This eliminates heavy liquid theme code and third-party app bloat.</p>
