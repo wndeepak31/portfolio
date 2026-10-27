@@ -23,6 +23,22 @@ export const metadata = {
 };
 
 import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
+import FAQSchema from '../../../components/FAQSchema';
+
+const frontendFaqs = [
+  {
+    question: 'Why choose Next.js over traditional React?',
+    answer: 'Traditional React applications suffer from poor SEO and slow initial load times because the browser has to download heavy JavaScript before showing the page. Next.js pre-renders pages on the server, resulting in instant load times, perfect Core Web Vitals, and excellent Google rankings.',
+  },
+  {
+    question: 'How do you handle responsive design for complex dashboards?',
+    answer: 'We utilize modern CSS Grid and Flexbox architectures, often paired with utility-first frameworks like Tailwind CSS. For highly complex data tables or SaaS dashboards, we design specific mobile layouts (like card-based views) rather than just shrinking desktop elements, ensuring a flawless mobile experience.',
+  },
+  {
+    question: 'Can you integrate with our existing backend API?',
+    answer: 'Absolutely. We specialize in decoupling frontends. We can build a lightning-fast React/Next.js frontend that consumes data securely from your existing REST, GraphQL, or legacy PHP/Java backend APIs.',
+  },
+];
 
 export default function FrontendExcellence() {
   return (
@@ -33,6 +49,7 @@ export default function FrontendExcellence() {
           { name: 'Front-End Excellence', path: '/services/frontend-excellence' },
         ]}
       />
+      <FAQSchema items={frontendFaqs} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

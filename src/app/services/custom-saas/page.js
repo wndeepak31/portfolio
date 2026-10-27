@@ -23,6 +23,22 @@ export const metadata = {
 };
 
 import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
+import FAQSchema from '../../../components/FAQSchema';
+
+const saasFaqs = [
+  {
+    question: 'How much does it cost to develop a custom web app?',
+    answer: 'The cost to build a custom web app depends entirely on the architecture and complexity. A simple MVP might start around $15,000, while a fully scalable enterprise SaaS platform with complex databases and AI integrations can range from $50,000 to over $150,000. We prioritize lean architecture to maximize your ROI.',
+  },
+  {
+    question: 'React vs Next.js: Is React overkill for a website?',
+    answer: 'Vanilla React is a client-side library, which can sometimes be bad for SEO. Next.js solves this by providing server-side rendering (SSR) on top of React. For a simple brochure site, React might be overkill, but for a dynamic SaaS platform, a custom portal, or an e-commerce site, Next.js is the absolute gold standard used by companies like Netflix and TikTok.',
+  },
+  {
+    question: 'Is Node.js still relevant in 2026?',
+    answer: 'Node.js is more relevant than ever for backend architecture. Its non-blocking, event-driven model makes it perfect for building highly scalable, real-time web applications. When paired with React on the frontend, it allows us to use JavaScript across the entire stack, drastically speeding up development time.',
+  },
+];
 
 export default function CustomSaaS() {
   return (
@@ -33,6 +49,7 @@ export default function CustomSaaS() {
           { name: 'Custom SaaS Architecture', path: '/services/custom-saas' },
         ]}
       />
+      <FAQSchema items={saasFaqs} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>

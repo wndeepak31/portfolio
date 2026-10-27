@@ -321,10 +321,10 @@ export default function HomeClient() {
           <div className={styles.testimonialHeader}>
             <div>
               <h2 style={{ fontSize: '3rem', fontWeight: '800', color: '#fff', marginBottom: '16px', letterSpacing: '-0.02em' }}>
-                What Our Clients Say
+                Trusted by Industry Leaders
               </h2>
-              <p style={{ color: '#9ca3af', fontSize: '1.05rem', maxWidth: '600px', lineHeight: '1.6' }}>
-                Don't just take our word for it. Here's what founders and engineering leaders across the globe think about our development platform.
+              <p style={{ color: '#9ca3af', fontSize: '1.05rem', maxWidth: '640px', lineHeight: '1.6' }}>
+                From iconic luxury watch & jewelry retailers to precision optical web apps and enterprise tech firms — here is what founders and engineering teams say about our work.
               </p>
             </div>
             <div className={styles.testimonialNav}>
@@ -339,7 +339,7 @@ export default function HomeClient() {
 
           <div className={styles.testimonialScrollContainer} ref={scrollRef}>
 
-            {/* Card 1 */}
+            {/* Card 1: Little Switzerland (USA / Caribbean) */}
             <div className={styles.testimonialCard}>
               <div className={styles.testimonialStars}>
                 {[...Array(5)].map((_, i) => (
@@ -347,18 +347,18 @@ export default function HomeClient() {
                 ))}
               </div>
               <p className={styles.testimonialQuote}>
-                "I had a complex requirement that 'worked' on free tools. ApexTech+'s robust architecture showed me how scalable real apps can be. That saved me from a live disaster. Worth every rupee."
+                "Handling ultra-luxury fine jewelry and certified Swiss timepieces requires absolute speed, zero downtime, and pixel-perfect design. ApexTech+ engineered our high-resolution e-commerce catalog with flawless Shopify synchronization, significantly boosting our online conversion benchmarks."
               </p>
               <div className={styles.testimonialAuthor}>
-                <div className={styles.testimonialAvatar}>SJ</div>
+                <div className={styles.testimonialAvatar} style={{ background: 'rgba(0, 184, 145, 0.1)', color: 'var(--accent-color)', borderColor: 'rgba(0, 184, 145, 0.3)' }}>LS</div>
                 <div className={styles.testimonialAuthorInfo}>
-                  <h3>Sarah Jenkins</h3>
-                  <p>Tech Startup CEO · San Francisco</p>
+                  <h3>Little Switzerland</h3>
+                  <p>Luxury Watches & Fine Jewelry · USA & Caribbean</p>
                 </div>
               </div>
             </div>
 
-            {/* Card 2 */}
+            {/* Card 2: Prime Lenses (India) */}
             <div className={styles.testimonialCard}>
               <div className={styles.testimonialStars}>
                 {[...Array(5)].map((_, i) => (
@@ -366,18 +366,18 @@ export default function HomeClient() {
                 ))}
               </div>
               <p className={styles.testimonialQuote}>
-                "Managing infrastructure for 30+ clients was becoming unmanageable. The multi-account deployment feature is exactly what our agency needed. My clients get consistent results."
+                "ApexTech+ built an advanced custom lens application allowing our customers to input their exact optical prescription specs and view recommendations in real time. The mathematical precision, UI responsiveness, and custom interactive workflow are world-class."
               </p>
               <div className={styles.testimonialAuthor}>
-                <div className={styles.testimonialAvatar}>MC</div>
+                <div className={styles.testimonialAvatar} style={{ background: 'rgba(0, 184, 145, 0.1)', color: 'var(--accent-color)', borderColor: 'rgba(0, 184, 145, 0.3)' }}>PL</div>
                 <div className={styles.testimonialAuthorInfo}>
-                  <h3>Marcus Chen</h3>
-                  <p>E-commerce Director · Singapore</p>
+                  <h3>Prime Lenses</h3>
+                  <p>Precision Optical & Eyewear Technology · India</p>
                 </div>
               </div>
             </div>
 
-            {/* Card 3 */}
+            {/* Card 3: 3in3 Interior (India) */}
             <div className={styles.testimonialCard}>
               <div className={styles.testimonialStars}>
                 {[...Array(5)].map((_, i) => (
@@ -385,18 +385,18 @@ export default function HomeClient() {
                 ))}
               </div>
               <p className={styles.testimonialQuote}>
-                "I gave him a rough idea on a WhatsApp voice note. Within 6 days I had a fully coded, optimized backend running smoothly on Vercel. The communication was crisp."
+                "Our contracting and interior architecture showcase needed a high-performance digital presence. ApexTech+ engineered a fast, modern platform that highlights our commercial and residential portfolio seamlessly, driving consistent high-ticket client inquiries."
               </p>
               <div className={styles.testimonialAuthor}>
-                <div className={styles.testimonialAvatar}>AB</div>
+                <div className={styles.testimonialAvatar} style={{ background: 'rgba(0, 184, 145, 0.1)', color: 'var(--accent-color)', borderColor: 'rgba(0, 184, 145, 0.3)' }}>3in3</div>
                 <div className={styles.testimonialAuthorInfo}>
-                  <h3>Aman B.</h3>
-                  <p>Product Manager · Delhi</p>
+                  <h3>3in3 Interior</h3>
+                  <p>Architecture, Contracting & Interior Design · India</p>
                 </div>
               </div>
             </div>
 
-            {/* Card 4 */}
+            {/* Card 4: techBharti (India) */}
             <div className={styles.testimonialCard}>
               <div className={styles.testimonialStars}>
                 {[...Array(5)].map((_, i) => (
@@ -404,13 +404,13 @@ export default function HomeClient() {
                 ))}
               </div>
               <p className={styles.testimonialQuote}>
-                "The custom development was a game changer. I run all my workflows through the centralized dashboard now — all synchronized flawlessly. Highly recommended."
+                "Deepak and the ApexTech+ engineering team have been a vital technical partner for our business-first technology solutions. Their expertise in scalable Next.js systems, high-speed API architecture, and reliable delivery makes them an indispensable development partner."
               </p>
               <div className={styles.testimonialAuthor}>
-                <div className={styles.testimonialAvatar}>VP</div>
+                <div className={styles.testimonialAvatar} style={{ background: 'rgba(0, 184, 145, 0.1)', color: 'var(--accent-color)', borderColor: 'rgba(0, 184, 145, 0.3)' }}>TB</div>
                 <div className={styles.testimonialAuthorInfo}>
-                  <h3>Venkatesh P.</h3>
-                  <p>Startup Founder · Bengaluru</p>
+                  <h3>techBharti</h3>
+                  <p>Enterprise Technology & Digital Transformation · India</p>
                 </div>
               </div>
             </div>

@@ -2,11 +2,19 @@ import styles from '../../page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'WebGL & Three.js Development Agency | Custom 3D Product Configurators | ApexTech+',
-  description: 'Explore WebGL and Three.js development services by ApexTech+. We create immersive 3D web experiences, interactive visuals, and custom product configurators.',
+  title: 'WebGL 3D Product & Jewelry Configurator Agency | ApexTech+',
+  description: 'Custom WebGL and Three.js 3D product configurators for Shopify, luxury e-commerce, and high-end brands. Real-time 3D diamond jewelry and product customizers.',
+  keywords: [
+    'webgl product configurator',
+    '3d product configurator',
+    '3d jewelry configurator',
+    'threejs development agency',
+    'webgl 3d configurator shopify',
+    'interactive 3d configurator',
+  ],
   openGraph: {
-    title: 'WebGL & Three.js Development Agency | Custom 3D Product Configurators | ApexTech+',
-    description: 'Explore WebGL and Three.js development services by ApexTech+. We create immersive 3D web experiences, interactive visuals, and custom product configurators.',
+    title: 'WebGL 3D Product & Jewelry Configurator Agency | ApexTech+',
+    description: 'Custom WebGL and Three.js 3D product configurators for Shopify, luxury e-commerce, and high-end brands. Real-time 3D diamond jewelry and product customizers.',
     url: 'https://www.apextechplus.com/services/webgl-3d-configurators',
     siteName: 'ApexTech+',
     locale: 'en_US',
@@ -14,8 +22,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WebGL & Three.js Development Agency | Custom 3D Product Configurators | ApexTech+',
-    description: 'Explore WebGL and Three.js development services by ApexTech+. We create immersive 3D web experiences, interactive visuals, and custom product configurators.',
+    title: 'WebGL 3D Product & Jewelry Configurator Agency | ApexTech+',
+    description: 'Custom WebGL and Three.js 3D product configurators for Shopify, luxury e-commerce, and high-end brands. Real-time 3D diamond jewelry and product customizers.',
   },
   alternates: {
     canonical: '/services/webgl-3d-configurators',
@@ -23,7 +31,27 @@ export const metadata = {
 };
 
 import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
+import FAQSchema from '../../../components/FAQSchema';
 import JewelryConfiguratorShowcase from '../../../components/JewelryConfiguratorShowcase';
+
+const webglFaqs = [
+  {
+    question: 'What is a WebGL 3D product configurator?',
+    answer: 'A WebGL 3D product configurator is an interactive web-based 3D application that allows customers to customize, rotate, zoom, and inspect products in real time directly within any browser (desktop or mobile) without requiring third-party plugins or apps. It drastically increases buyer confidence and conversion rates for luxury e-commerce.',
+  },
+  {
+    question: 'How do you integrate Three.js into a web development workflow?',
+    answer: 'We utilize modern frameworks like React Three Fiber to seamlessly bridge the gap between Next.js and Three.js. This allows us to maintain a component-driven architecture while leveraging WebGL for rendering, resulting in highly performant, SEO-friendly 3D web applications.',
+  },
+  {
+    question: 'How much does it cost to develop a custom 3D product configurator?',
+    answer: 'The cost depends heavily on the complexity of the 3D models and the logic of the configurator (e.g., dynamic pricing, material changes). A basic 3D viewer might start around $10,000, while a complex, multi-part interactive automotive or luxury jewelry configurator integrated with Shopify can range from $25,000 to $75,000+.',
+  },
+  {
+    question: 'Will a WebGL 3D configurator slow down my website?',
+    answer: 'Not when built correctly. We aggressively optimize geometries, use compressed textures (like KTX2 and Draco), and implement lazy-loading so the 3D canvas only initializes when required. This ensures your initial page load remains blazing fast for SEO, while still delivering a premium interactive experience.',
+  },
+];
 
 export default function WebGLConfigurators() {
   return (
@@ -34,6 +62,7 @@ export default function WebGLConfigurators() {
           { name: 'WebGL & 3D Configurators', path: '/services/webgl-3d-configurators' },
         ]}
       />
+      <FAQSchema items={webglFaqs} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>
@@ -77,6 +106,11 @@ export default function WebGLConfigurators() {
             <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '40px' }}>Common 3D Web Questions</h2>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div style={{ padding: '24px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '12px' }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: '#fff' }}>What is a WebGL 3D product configurator?</h3>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>A WebGL 3D product configurator is an interactive web-based 3D application that allows customers to customize, rotate, zoom, and inspect products in real time directly within any browser (desktop or mobile) without requiring third-party plugins or apps. It drastically increases buyer confidence and conversion rates for luxury e-commerce.</p>
+              </div>
+
               <div style={{ padding: '24px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '12px' }}>
                 <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: '#fff' }}>How do you integrate Three.js into a web development workflow?</h3>
                 <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>We utilize modern frameworks like React Three Fiber to seamlessly bridge the gap between Next.js and Three.js. This allows us to maintain a component-driven architecture while leveraging WebGL for rendering, resulting in highly performant, SEO-friendly 3D web applications.</p>

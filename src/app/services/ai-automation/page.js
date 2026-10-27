@@ -23,6 +23,22 @@ export const metadata = {
 };
 
 import BreadcrumbSchema from '../../../components/BreadcrumbSchema';
+import FAQSchema from '../../../components/FAQSchema';
+
+const aiFaqs = [
+  {
+    question: 'How secure is my company data if we use AI?',
+    answer: 'We prioritize enterprise-grade security. When building custom RAG (Retrieval-Augmented Generation) pipelines, your data remains in your private database and is only sent to secure, zero-retention API endpoints (like OpenAI Enterprise), ensuring your proprietary data is never used to train public models.',
+  },
+  {
+    question: 'What kind of tasks can we actually automate?',
+    answer: 'Almost any repetitive digital task can be automated. We frequently automate customer support triaging, invoice processing, cross-platform data syncing, personalized cold outreach, and dynamic content generation.',
+  },
+  {
+    question: 'How much does a custom AI integration cost?',
+    answer: 'Pricing varies based on complexity. Simple workflow automations connecting existing tools can start around $5,000, while custom-built AI applications with proprietary RAG architectures typically range from $20,000 to $60,000+. We scope the exact ROI before writing a single line of code.',
+  },
+];
 
 export default function AiAutomation() {
   return (
@@ -33,6 +49,7 @@ export default function AiAutomation() {
           { name: 'AI & Automation', path: '/services/ai-automation' },
         ]}
       />
+      <FAQSchema items={aiFaqs} />
       <section className="section" style={{ paddingTop: '30px' }}>
         <div className="container">
           <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '40px' }}>
