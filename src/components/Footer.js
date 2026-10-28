@@ -12,7 +12,7 @@ export default function Footer() {
             <div className={styles.logo} style={{ display: 'flex', alignItems: 'center' }}>
               <Image 
                 src="/apexTechPlus-logo.png" 
-                alt="ApexTech+ Logo" 
+                alt="ApexTech+" 
                 width={161} 
                 height={28} 
                 style={{ height: '28px', width: 'auto' }} 
