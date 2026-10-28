@@ -9,10 +9,10 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar} style={{ position: 'sticky', top: '20px', zIndex: 100 }}>
-      <Link href="/" className={styles.logo} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+      <Link href="/" className={styles.logo} aria-label="ApexTech+ Home" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <Image 
           src="/apexTechPlus-logo.png" 
-          alt="ApexTech+ Logo" 
+          alt="ApexTech+" 
           width={173} 
           height={30} 
           priority 

@@ -67,7 +67,8 @@ export default function HomeClient() {
                 AVAILABLE FOR PROJECTS
               </div>
 
-              <h1 className={styles.heroTitle}>
+              <h1 className={styles.heroTitle} aria-label="ApexTech+ — Elite Enterprise Web Architecture Agency">
+                <span className="sr-only" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', borderWidth: 0 }}>ApexTech+ — </span>
                 <span style={{ color: '#ffffff' }}>Design.</span><br />
                 <span style={{ color: '#64748b' }}>Build.</span><br />
                 <span style={{ color: 'var(--accent-color)' }}>Deploy.</span>
