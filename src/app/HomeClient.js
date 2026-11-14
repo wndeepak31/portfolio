@@ -431,59 +431,64 @@ export default function HomeClient() {
           <div className={styles.exploreGrid}>
             {/* Explore Cards Grid */}
             {/* Card 1 */}
-            <a href="#custom-dev" className={styles.exploreCard}>
+            <Link href="/services/custom-saas" className={styles.exploreCard}>
               <div className={styles.exploreIcon}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
               </div>
               <h3>Custom Web Development</h3>
               <p>Build any web application from scratch using React, Next.js, and modern CSS. Fast, accessible, and perfectly tailored to your needs.</p>
-            </a>
+              <div className={styles.exploreLink}>Learn more &rarr;</div>
+            </Link>
 
             {/* Card 2 */}
-            <a href="#api-dev" className={styles.exploreCard}>
+            <Link href="/services/cloud-architecture" className={styles.exploreCard}>
               <div className={styles.exploreIcon}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
               </div>
               <h3>API & Backend Architecture</h3>
               <p>Describe your data requirements — we'll architect it in Node.js or Python, test it, and deploy it securely to the cloud.</p>
               <div className={styles.exploreLink}>Learn more &rarr;</div>
-            </a>
+            </Link>
 
             {/* Card 3 */}
-            <a href="#ui-ux" className={styles.exploreCard}>
+            <Link href="/services/frontend-excellence" className={styles.exploreCard}>
               <div className={styles.exploreIcon}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
               </div>
               <h3>UI/UX Prototyping</h3>
               <p>Deploy beautiful, intuitive user interfaces. We use Figma to design high-fidelity mockups before writing a single line of code.</p>
-            </a>
+              <div className={styles.exploreLink}>Learn more &rarr;</div>
+            </Link>
 
             {/* Card 4 */}
-            <a href="#3d-configurator" className={styles.exploreCard}>
+            <Link href="/services/webgl-3d-configurators" className={styles.exploreCard}>
               <div className={styles.exploreIcon}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
               </div>
               <h3>Interactive 3D Configurators</h3>
               <p>Bring your products to life. We build WebGL & Three.js powered 3D product viewers that allow customers to customize jewelry and products directly in the browser.</p>
-            </a>
+              <div className={styles.exploreLink}>Learn more &rarr;</div>
+            </Link>
 
             {/* Card 5 */}
-            <a href="#shopify" className={styles.exploreCard}>
+            <Link href="/services/headless-shopify" className={styles.exploreCard}>
               <div className={styles.exploreIcon}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
               </div>
               <h3>Custom Shopify E-commerce</h3>
               <p>Go beyond basic themes. We develop headless Shopify storefronts, custom plugins, and seamless backend integrations tailored for luxury retail and high-volume sales.</p>
-            </a>
+              <div className={styles.exploreLink}>Learn more &rarr;</div>
+            </Link>
 
             {/* Card 6 */}
-            <a href="#blog" className={styles.exploreCard}>
+            <Link href="/blog" className={styles.exploreCard}>
               <div className={styles.exploreIcon}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
               </div>
               <h3>Blog & Dev Research</h3>
               <p>Deep dives into modern web architecture, state management design, and performance engineering.</p>
-            </a>
+              <div className={styles.exploreLink}>Learn more &rarr;</div>
+            </Link>
           </div>
         </section>
 

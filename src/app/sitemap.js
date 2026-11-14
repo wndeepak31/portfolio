@@ -1,3 +1,5 @@
+import { blogPosts } from '../data/blogPosts';
+
 export default function sitemap() {
   const baseUrl = 'https://www.apextechplus.com';
   const currentDate = new Date().toISOString();
@@ -28,6 +30,13 @@ export default function sitemap() {
     { path: '/terms', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/refund', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/security', priority: 0.4, changeFrequency: 'monthly' },
+
+    // Blog Articles
+    ...blogPosts.map((post) => ({
+      path: `/blog/${post.slug}`,
+      priority: 0.7,
+      changeFrequency: 'monthly',
+    })),
   ];
 
   return routes.map((route) => ({
